@@ -22,6 +22,14 @@ Sistemin NLP arka planı **Hugging Face Transformers** altyapısı üzerine inş
 * **Deep-Translator:** Kelime parçalama, asenkron ve batched (gruplanmış) API çeviri işlemleri.
 * **Threading:** Arayüz (UI) kilitlenmelerini önlemek amacıyla ağır işlemlerin arka plan işçilerine devredilmesi.
 
+## 🏗️ Proje Mimarisi (OOP Modüler Yapı)
+
+Proje, sürdürülebilirlik ve temiz kod (Clean Code) prensipleri gözetilerek **Nesne Yönelimli Programlama (OOP)** standartlarında sınıflara (class) bölünmüş modüler bir yapıda tasarlanmıştır:
+
+* **`analyzer.py`:** NLP modellerinin (DistilBERT) yüklenmesi, duygu analizi çıkarımları ve asenkron çeviri gibi arka plan (backend) işlemlerini ve mantıksal operasyonları kapsülleyen analiz sınıfını içerir.
+* **`gui.py`:** CustomTkinter kullanılarak tasarlanmış modern grafik kullanıcı arayüzü (frontend) sınıfını barındırır. Kullanıcı etkileşimlerini, buton olaylarını ve çıktıların görselleştirilmesini yönetir.
+* **`main.py`:** Uygulamanın ana giriş noktasıdır. Arayüz (GUI) ve analiz (Analyzer) nesnelerini örnekleyip bir araya getirerek uygulamanın uyum içinde çalışmasını başlatır.
+
 ## ⚙️ Kurulum ve Çalıştırma
 
 **1. Projeyi Klonlayın:**
