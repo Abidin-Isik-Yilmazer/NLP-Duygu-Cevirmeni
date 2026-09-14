@@ -50,6 +50,3 @@ python main.py
 
 *(Önemli Not: Uygulama ilk kez çalıştırıldığında DistilBERT modeli Hugging Face sunucularından indirileceği için kısa bir süre bekletebilir. Sonraki kullanımlarda model önbellekten (cache) anında yüklenecektir.)*
 
-## 💡 Gelecek Güncellemeler (Yol Haritası)
-
-- [ ] **OCR Entegrasyonu:** Tesseract ve OpenCV kullanılarak, görsellerden otomatik İngilizce metin çıkarımı yapılması ve çıkarılan metinlerin analiz/çeviri modülüne doğrudan aktarılması.
